@@ -2,7 +2,6 @@ package twentyfive
 
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.findGreatestProduct
 
 class T8 {
     @Test fun testGreatestProduct() {

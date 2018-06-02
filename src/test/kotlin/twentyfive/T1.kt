@@ -2,8 +2,6 @@ package twentyfive
 
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.sumOfMultiplesOf3Or5
-import twentyfive.sumOfMultiplesOf3Or5Until1000
 
 class T1 {
     @Test fun testSumUntilTen() {

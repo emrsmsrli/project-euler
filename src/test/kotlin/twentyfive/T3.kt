@@ -2,8 +2,6 @@ package twentyfive
 
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.largestFactor
-import twentyfive.smallestFactor
 
 class T3 {
     @Test fun testSmallestFactor() {

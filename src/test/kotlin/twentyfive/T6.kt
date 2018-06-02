@@ -2,9 +2,6 @@ package twentyfive
 
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.diffSumAndSquare
-import twentyfive.squareOfSums
-import twentyfive.sumOfSquares
 
 class T6 {
     @Test fun testSquareOfSums() {
