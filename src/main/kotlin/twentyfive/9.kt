@@ -1,3 +1,5 @@
+// https://projecteuler.net/problem=9
+
 package twentyfive
 
 import util.pow
