@@ -1,3 +1,5 @@
+// https://projecteuler.net/problem=10
+
 package twentyfive
 
 fun sumOfPrimes(until: Int = 2_000_000): Long {
