@@ -19,3 +19,11 @@ fun Long.sqrt(): Long {
     }
     return y
 }
+
+fun String.isPalindrome(): Boolean {
+    val l = this.length
+    for(k in 0 until l / 2)
+        if(this[k] != this[l - k - 1])
+            return false
+    return true
+}

@@ -1,6 +1,7 @@
 import org.junit.Assert
 import org.junit.Test
 import util.isEven
+import util.isPalindrome
 import util.sqrt
 
 class Extensions {
@@ -14,5 +15,11 @@ class Extensions {
     @Test fun testSqrt() {
         Assert.assertEquals(2L, 4L.sqrt())
         Assert.assertEquals(15L, 255L.sqrt())
+    }
+
+    @Test fun testIsPalindrome() {
+        Assert.assertTrue("testtset".isPalindrome())
+        Assert.assertTrue("10022001".isPalindrome())
+        Assert.assertFalse("emre".isPalindrome())
     }
 }
