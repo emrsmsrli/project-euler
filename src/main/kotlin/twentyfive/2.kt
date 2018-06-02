@@ -10,11 +10,9 @@ fun sumOfEvenValuedTermsInFibNotExceeding4Million(): Long {
     return nums.filter { it.isEven() }.sum()
 }
 
-fun fib(limit: Long, nums: MutableSet<Long>) = fib(limit, 0, 1, nums)
-
-tailrec fun fib(limit: Long, t1: Long, t2: Long, nums: MutableSet<Long>) {
+tailrec fun fib(limit: Long, nums: MutableSet<Long>, t1: Long = 0L, t2: Long = 1L) {
     if(t2 > limit)
         return
     nums.add(t2)
-    fib(limit, t2, t1 + t2, nums)
+    fib(limit, nums, t2, t1 + t2)
 }
