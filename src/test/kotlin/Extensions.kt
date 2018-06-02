@@ -15,6 +15,7 @@ class Extensions {
     @Test fun testSqrt() {
         Assert.assertEquals(2L, 4L.sqrt())
         Assert.assertEquals(15L, 255L.sqrt())
+        Assert.assertNotEquals(2L, 9L.sqrt())
     }
 
     @Test fun testIsPalindrome() {
