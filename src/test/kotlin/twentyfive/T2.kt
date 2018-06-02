@@ -1,7 +1,7 @@
+package twentyfive
+
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.fib
-import twentyfive.sumOfEvenValuedTermsInFibNotExceeding4Million
 
 class T2 {
     @Test fun testFibonacciUntilTen() {
