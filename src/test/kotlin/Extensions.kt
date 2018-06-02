@@ -6,9 +6,9 @@ import util.sqrt
 
 class Extensions {
     @Test fun testIsEven() {
-        Assert.assertTrue(!1.isEven())
+        Assert.assertFalse(1.isEven())
         Assert.assertTrue(2.isEven())
-        Assert.assertTrue(!2_000_001.isEven())
+        Assert.assertFalse(2_000_001.isEven())
         Assert.assertTrue(2_000_000.isEven())
     }
 
