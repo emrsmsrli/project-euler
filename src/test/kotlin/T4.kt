@@ -1,9 +1,9 @@
 import org.junit.Assert
 import org.junit.Test
-import twentyfive.maxPalindome
+import twentyfive.maxPalindrome
 
 class T4 {
     @Test fun testMaxPalindrome() {
-        Assert.assertEquals(906609, maxPalindome())
+        Assert.assertEquals(906609, maxPalindrome())
     }
 }
