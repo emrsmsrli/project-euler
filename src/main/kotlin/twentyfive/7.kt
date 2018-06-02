@@ -2,12 +2,18 @@
 
 package twentyfive
 
+import kotlin.math.ln
+import kotlin.math.sqrt
+
 // https://stackoverflow.com/a/9704912
 fun nthPrime(n: Int): Int {
-    if(n < 2) return 2
-    if(n == 2) return 3
-    var limit = (n * (Math.log(n.toDouble()) + Math.log(Math.log(n.toDouble())))).toInt() + 3
-    var root = Math.sqrt(limit.toDouble()).toInt() + 1
+    when(n) {
+        in Int.MIN_VALUE..0 -> return -1
+        1 -> return 2
+        2 -> return 3
+    }
+    var limit = (n * (ln(n.toDouble()) + ln(Math.log(n.toDouble())))).toInt() + 3
+    var root = sqrt(limit.toDouble()).toInt() + 1
     var count = 1
     limit = (limit - 1) / 2
     root = root / 2 - 1
