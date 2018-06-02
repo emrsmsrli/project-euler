@@ -39,10 +39,3 @@ fun nthPrime(n: Int): Int {
     }
     return 2 * p + 1
 }
-
-fun main(args: Array<String>) {
-    println(nthPrime(1))
-    println(nthPrime(2))
-    println(nthPrime(3))
-    println(nthPrime(10001))
-}
