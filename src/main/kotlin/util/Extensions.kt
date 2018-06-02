@@ -4,6 +4,13 @@ fun Int.isEven(): Boolean {
     return this % 2 == 0
 }
 
+fun Int.pow(n: Int): Int {
+    var sum = 1
+    for(i in 1..n)
+        sum *= this
+    return sum
+}
+
 fun Long.isEven(): Boolean {
     return this % 2L == 0L
 }
