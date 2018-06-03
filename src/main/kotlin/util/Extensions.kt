@@ -34,3 +34,31 @@ fun String.isPalindrome(): Boolean {
             return false
     return true
 }
+
+fun primes(n: Int): List<Int> {
+    val primes = BooleanArray(n + 1)
+    for(i in 2 until primes.size)
+        primes[i] = true
+    var num = 2
+    while(true) {
+        var k = 2
+        while(true) {
+            val multiple = num * k
+            if(multiple > n) break
+            else primes[multiple] = false
+            k++
+        }
+        var nextNumFound = false
+        for(i in num + 1 until n + 1) {
+            if(primes[i]) {
+                num = i
+                nextNumFound = true
+                break
+            }
+        }
+        if(!nextNumFound)
+            break
+    }
+
+    return primes.indices.filter { primes[it] }
+}
