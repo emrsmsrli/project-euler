@@ -3,13 +3,13 @@
 package twentyfive
 
 import util.pow
-import util.primes
+import util.Primes
 import util.sqrt
 import kotlin.math.floor
 import kotlin.math.ln
 
 fun smallestNumberDivisibleByNumbersOneTo20(): Int {
-    val p = primes(50)
+    val p = Primes.take(50)
     val k = 20L
     var n = 1
     var i = 0

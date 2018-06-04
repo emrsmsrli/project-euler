@@ -2,8 +2,8 @@
 
 package twentyfive
 
-import util.primes
+import util.Primes
 
 fun sumOfPrimes(until: Int = 2_000_000): Long {
-    return primes(until).fold(0L) { i, j -> i + j }
+    return Primes.takeUntil(until).fold(0L) { i, j -> i + j }
 }

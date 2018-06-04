@@ -5,11 +5,6 @@ import org.junit.Test
 
 class Extensions {
 
-    @Test fun testPrimes() {
-        Assert.assertEquals("2, 3", primes(3).joinToString())
-        Assert.assertEquals("2, 3, 5, 7", primes(10).joinToString())
-    }
-
     @Test fun testIsEven() {
         Assert.assertFalse(1.isEven())
         Assert.assertTrue(2.isEven())
