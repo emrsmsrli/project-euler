@@ -9,3 +9,8 @@
 
 - Baby Steps
 - Decathlete
+
+###### Credits
+
+MehdiK for a wonderful port of Humanizer .NET for JVM
+https://github.com/MehdiK/Humanizer.jvm
