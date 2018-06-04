@@ -1,5 +1,7 @@
 package util
 
+import java.math.BigInteger
+
 fun Int.isEven(): Boolean {
     return this % 2 == 0
 }
@@ -9,6 +11,13 @@ fun Int.pow(n: Int): Int {
     for(i in 1..n)
         sum *= this
     return sum
+}
+
+fun Int.fact(): BigInteger {
+    if(this == 0 || this == 1)
+        return BigInteger.ONE
+
+    return BigInteger.valueOf(this.toLong()) * (this - 1).fact()
 }
 
 fun Long.isEven(): Boolean {

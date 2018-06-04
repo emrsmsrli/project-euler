@@ -4,6 +4,12 @@ import org.junit.Assert
 import org.junit.Test
 
 class Extensions {
+    @Test fun testFact() {
+        Assert.assertEquals(1, 0.fact())
+        Assert.assertEquals(1, 1.fact())
+        Assert.assertEquals(2, 2.fact())
+        Assert.assertEquals(120, 5.fact())
+    }
 
     @Test fun testIsEven() {
         Assert.assertFalse(1.isEven())
