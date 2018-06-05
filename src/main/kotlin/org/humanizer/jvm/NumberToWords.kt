@@ -1,8 +1,20 @@
-package org.humanizer.jvm;
+package org.humanizer.jvm
 
 import java.util.ArrayList
 
-class NumberToWords {
+object NumberToWords {
+    private val unitsMap = listOf (
+            "zero", "one", "two", "three",
+            "four", "five", "six", "seven",
+            "eight", "nine", "ten", "eleven",
+            "twelve", "thirteen", "fourteen",
+            "fifteen", "sixteen", "seventeen",
+            "eighteen", "nineteen")
+
+    private val tensMap = listOf("zero", "ten", "twenty",
+            "thirty", "forty", "fifty", "sixty",
+            "seventy", "eighty", "ninety")
+
     fun toWords(value: Long): String {
         var number = value
         if (number == 0L)
@@ -38,24 +50,16 @@ class NumberToWords {
                 parts.add("and")
 
             if (number < 20)
-                parts.add(unitsMap()[number.toInt()])
+                parts.add(unitsMap[number.toInt()])
             else {
-                var lastPart = tensMap()[number.toInt() / 10]
+                var lastPart = tensMap[number.toInt() / 10]
                 if ((number % 10) > 0)
-                    lastPart += "-${unitsMap()[number.toInt() % 10]}"
+                    lastPart += "-${unitsMap[number.toInt() % 10]}"
 
                 parts.add(lastPart)
             }
         }
 
         return parts.joinToString(" ").trimStart()
-    }
-
-    private fun unitsMap(): List<String> {
-        return listOf ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen")
-    }
-
-    private fun tensMap(): List<String> {
-        return listOf("zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety")
     }
 }

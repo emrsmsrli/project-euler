@@ -5,5 +5,5 @@ fun Int.toWords(): String {
 }
 
 fun Long.toWords(): String {
-    return NumberToWords().toWords(this)
+    return NumberToWords.toWords(this)
 }
