@@ -10,7 +10,7 @@ fun triangleNumber(n: Int) = n * (n + 1) / 2
 
 fun divisorCount(triangleNumber: Int): Int {
     var dCount = 1
-        val sqr = sqrt(triangleNumber.toFloat()).toInt()
+    val sqr = sqrt(triangleNumber.toFloat()).toInt()
     for(i in 2..sqr)
         if(triangleNumber % i == 0)
             dCount += 2
