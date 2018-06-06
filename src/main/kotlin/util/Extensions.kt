@@ -13,6 +13,17 @@ fun Int.pow(n: Int): Int {
     return sum
 }
 
+fun Int.sumOfEvenDivisors(): Int {
+    var sum = 0
+    for(i in 1..(this / 2)) {
+        if(this % i == 0)
+            sum += i
+    }
+    return sum
+}
+
+fun Int.sumOfDivisors() = sumOfEvenDivisors() + this
+
 fun Int.isLeapYear() = this % 4 == 0 || this % 400 == 0
 
 fun Int.fact(): BigInteger {

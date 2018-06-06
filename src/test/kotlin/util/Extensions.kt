@@ -18,6 +18,14 @@ class Extensions {
         Assert.assertTrue(2_000_000.isEven())
     }
 
+    @Test fun testSumOfDivisors() {
+        Assert.assertEquals(3, 2.sumOfDivisors())
+    }
+
+    @Test fun testSumOfEvenDivisors() {
+        Assert.assertEquals(1, 2.sumOfEvenDivisors())
+    }
+
     @Test fun testIsLeapYear() {
         Assert.assertTrue(2000.isLeapYear())
         Assert.assertTrue(2004.isLeapYear())
