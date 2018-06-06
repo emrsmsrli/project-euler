@@ -2,13 +2,14 @@ package util
 
 import org.junit.Assert
 import org.junit.Test
+import java.math.BigInteger
 
 class Extensions {
     @Test fun testFact() {
-        Assert.assertEquals(1, 0.fact())
-        Assert.assertEquals(1, 1.fact())
-        Assert.assertEquals(2, 2.fact())
-        Assert.assertEquals(120, 5.fact())
+        Assert.assertEquals(BigInteger.ONE, 0.fact())
+        Assert.assertEquals(BigInteger.ONE, 1.fact())
+        Assert.assertEquals(BigInteger.valueOf(2L), 2.fact())
+        Assert.assertEquals(BigInteger.valueOf(120L), 5.fact())
     }
 
     @Test fun testIsEven() {

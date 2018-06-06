@@ -9,7 +9,7 @@ class T12 {
     }
 
     @Test fun testDivisorCount() {
-        Assert.assertEquals(1, divisorCount(triangleNumber(1)))
+        Assert.assertEquals(0, divisorCount(triangleNumber(1)))
         Assert.assertEquals(2, divisorCount(triangleNumber(2)))
         Assert.assertEquals(4, divisorCount(triangleNumber(3)))
         Assert.assertEquals(4, divisorCount(triangleNumber(4)))
