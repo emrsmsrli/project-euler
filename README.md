@@ -2,13 +2,14 @@
 
 ### Progress
 
-**Solved:** _23_ out of _627_ <br>
+**Solved:** _24_ out of _627_ <br>
 **Max difficulty:** _5%_
 
 ###### Awards
 
 - Baby Steps
 - Decathlete
+- The Journey Begins
 
 ###### Credits
 
