@@ -13,6 +13,8 @@ fun Int.pow(n: Int): Int {
     return sum
 }
 
+fun Int.isLeapYear() = this % 4 == 0 || this % 400 == 0
+
 fun Int.fact(): BigInteger {
     if(this == 0 || this == 1)
         return BigInteger.ONE

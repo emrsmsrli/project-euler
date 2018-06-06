@@ -18,6 +18,12 @@ class Extensions {
         Assert.assertTrue(2_000_000.isEven())
     }
 
+    @Test fun testIsLeapYear() {
+        Assert.assertTrue(2000.isLeapYear())
+        Assert.assertTrue(2004.isLeapYear())
+        Assert.assertFalse(2005.isLeapYear())
+    }
+
     @Test fun testSqrt() {
         Assert.assertEquals(2L, 4L.sqrt())
         Assert.assertEquals(15L, 255L.sqrt())
