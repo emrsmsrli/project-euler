@@ -51,4 +51,11 @@ class Extensions {
         Assert.assertEquals(32, 2.pow(5))
         Assert.assertEquals(512, 2.pow(9))
     }
+
+    @Test fun testSwap() {
+        val arr = intArrayOf(1, 3, 2)
+        val swapped = intArrayOf(1, 2, 3)
+        arr.swap(1, 2)
+        Assert.assertArrayEquals(swapped, arr)
+    }
 }

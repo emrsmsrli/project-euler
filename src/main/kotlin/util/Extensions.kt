@@ -56,3 +56,9 @@ fun String.isPalindrome(): Boolean {
             return false
     return true
 }
+
+fun IntArray.swap(i: Int, j: Int) {
+    val t = this[i]
+    this[i] = this[j]
+    this[j] = t
+}
