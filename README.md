@@ -2,7 +2,7 @@
 
 ### Progress
 
-**Solved:** _23_ out of _627_
+**Solved:** _23_ out of _627_ <br>
 **Max difficulty:** _5%_
 
 ###### Awards
